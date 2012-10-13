@@ -1,0 +1,66 @@
+
+============            .'|_.-               ============
+============            .'  '  /_            ============
+============         .-\"    -.   '>         ============
+============      .- -. -.    '. /    /|_    ============
+============     .-.--.-.       ' >  /  /    ============
+============    (o( o( o )       \\_.\"  <   ============
+============     '-'-''-'            ) <     ============
+============   (       _.-'-.   ._\\.  _\\   ============
+============    '----\"/--.__.-) _-  \\|     ============
+============        \"V\"\"    \"V\"         ============
+
+	   FISH - Fast and Intelligent SHell!!!
+
+Introduction
+============
+
+This is Fish Shell, version 0.1. This simple shell is a example  
+of implementation of the POSIX shell spec,but also with interactive 
+command line editing, job control on architectures that support it, 
+csh-like features such as history substitution and brace expansion, 
+and a slew of other features. There is also a large Unix-style man 
+page.The man page is the definitive description of the shell's 
+features. 
+
+See the file POSIX for a discussion of how the Fish defaults differ
+from the POSIX spec and a description of the Fish `posix mode'.
+
+Fish is free software, distributed under the terms of the [GNU] General
+Public License as published by the Free Software Foundation,
+version 3 of the License (or any later version).  For more information,
+see the file COPYING. 
+
+To compile Fish, type `make', then `./fish' to execute the shell.  
+Fish auto-configures the build process, so no further intervention 
+should be necessary.  Fish builds with `gcc' by default if it is 
+available.
+
+Reporting Bugs
+==============
+
+Bug reports for fish should be sent to darlanpj@gmail.com, 
+                                       amaral.felipeaugusto@gmail.com or 
+                                       tigosn92@gmail.com
+with the following information:
+
+	* the version number and release status of Fish (e.g., 0.05a-release)
+	* the machine and OS that it is running on (you may run
+	  `fishversion -l' from the fish build directory for this information)
+	* a list of the compilation flags or the contents of `config.h', if
+	  appropriate
+	* a description of the bug
+	* a recipe for recreating the bug reliably
+	* a fix for the bug if you have one!
+
+
+While the Fish maintainers do not promise to fix all bugs, we would
+like this shell to be the best that we can make it.
+
+Enjoy!
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.  This file is offered as-is,
+without any warranty.
+

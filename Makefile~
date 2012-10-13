@@ -1,0 +1,6 @@
+all: fish-shell
+
+fish-shell:
+
+	gcc -c lib/funcs.c lib/exec.c lib/fish.c -Wall -ansi
+	gcc main.c funcs.o fish.o exec.o -o fish -ansi -Wall 
