@@ -90,13 +90,13 @@ int exec(char *command){
 			if(strcmp(args[i], "|") == 0){ /*>>>> achou um pipe*/
 				args[i] = NULL; 
 				
-				/* redirects IO */
+				/* redirects I/O */
 				pipe(pipefd);
 				
 				pid2 = fork ();
 				/* >>> if (pid2 <0) fatal (); */
 				
-				if(pid2 > 0){ /* >>> PAI */
+				if(pid2 > 0){ /* >>> Parent */
 					wait(&status);		/* Wait for child to terminate. */
 					close(STDIN_FILENO);
 					dup(pipefd[0]);
@@ -114,7 +114,7 @@ int exec(char *command){
 			}
 		}
 		
-		/* redirects IO */
+		/* redirects I/O */
 		/* redirects output (>) */
 		if(red_out != NULL){
 			if((fd_out = open(red_out, O_CREAT | O_TRUNC | O_WRONLY, S_IWUSR | S_IRUSR)) < 0){
